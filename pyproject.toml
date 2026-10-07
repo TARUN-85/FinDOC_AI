@@ -1,0 +1,22 @@
+[project]
+name = "findoc-ai"
+version = "0.1.0"
+description = "Streamlit RAG app for asking questions about finance documents (Gemini by default)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit>=1.40",
+    "google-genai>=1.0",
+    "chromadb>=1.0",
+    "pypdf>=5.0",
+    "python-docx>=1.1",
+    "python-dotenv>=1.0",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["Main"]
+testpaths = ["tests"]

@@ -1,0 +1,18 @@
+# Non-secret defaults. Environment variables and Config/.env override these.
+# Never put API keys here.
+llm_provider: gemini
+llm_model: gemini-3.8-flash          # gemini-2.5-flash is restricted for new Gemini API users (see README)
+# llm_temperature:                   # leave unset to use the provider default
+embedding_provider: gemini
+embedding_model: gemini-embedding-001
+embedding_dimensions: 768            # 128-3072; 768/1536/3072 recommended by Google
+vector_store: chroma
+chunk_size: 1000                     # characters
+chunk_overlap: 150
+top_k: 5
+min_relevance: 0.30                  # cosine similarity floor (0-1); lower = more permissive
+max_upload_mb: 25
+log_level: INFO
+input_dir: InputDoc                  # relative paths resolve against the project root
+database_dir: DataBase
+log_dir: Logs

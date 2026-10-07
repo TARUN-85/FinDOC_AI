@@ -1,0 +1,23 @@
+# Secrets
+.env
+Config/.env
+.streamlit/secrets.toml
+
+# User data
+InputDoc/*
+!InputDoc/.gitkeep
+DataBase/*
+!DataBase/.gitkeep
+Logs/*
+!Logs/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
