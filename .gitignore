@@ -16,8 +16,20 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+Findoc_venv/
 env/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 *.egg-info/
+
+# Local environments and secrets
+.venv/
+Findoc_venv/
+Config/.env
+.env
+.streamlit/secrets.toml
+DataBase/
+Logs/
+InputDoc/*
+!InputDoc/.gitkeep
